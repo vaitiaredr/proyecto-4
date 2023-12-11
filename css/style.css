@@ -1,3 +1,5 @@
+
+/*
 html{
     height: 100%;
 }
@@ -69,3 +71,59 @@ span{
 .active {
 background-color: #aaa;
 }
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fceaff; /* Fondo rosa clarito */
+    color: #333; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #contenedor {
+    display: flex;
+    flex-direction: column; /* Elementos apilados verticalmente */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    margin-top: 20px;
+  }
+  
+  button {
+    width: 50px;
+    height: 180px;
+    margin: 5px;
+    border: 2px solid #e5e5e5; /* Borde del botón */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo del botón */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  .tecla-negra {
+    position: relative;
+    background-color: #333; /* Color de fondo de la tecla negra */
+    z-index: 1;
+    margin-left: -25px; /* Ajuste para posicionar correctamente las teclas negras */
+    width: 35px;
+    height: 120px;
+    border: 2px solid #444; /* Borde de la tecla negra */
+    border-radius: 6px; /* Bordes redondeados */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Cambios al pasar el cursor sobre los botones */
+  button:hover {
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+  }
