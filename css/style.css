@@ -1,11 +1,71 @@
-@import"./instrument.css";
-@import"./navbar.css";
-@import"./style.css";
-@import"./title.css";
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+html{
+    height: 100%;
+}
+body {
+    background-color: #b30e79;
+    height: 100%;
+}
+span{
+    font-family: Arial; 
+    color:white;
+
+}
+#cabecera {
+    display: flex;  
+     align-items: center;
+     justify-content: center;
+     height: 10%;
+}
+#contenedor {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#Piano{
+    display: flex;
+    position: relative;
+}
+
+.tecla-blanca{
+    color: white;
+    height: 120px;
+    width: 40px;
+    border: 1.5px solid black;
+    border-radius:0 0 5px 5px;
+}
+
+.tecla-negra { 
+    background-color: black;
+    height: 80px;
+    width: 20px;
+    border: 1.5px solid black;
+    position: absolute;
+    border-radius:0 0 5px 5px;
+}
+.REb4{
+    left:30px;
+}
+.MIb4{
+    left: 70px;
+}
+
+.SOlb4{
+    left: 150px;
+}
+.LAb4{
+    left: 190px;
+}
+.SIb4{
+    left: 230px;
+}
+.REb5{
+    left: 310px;
+}
+.MIb5{
+    left: 350px;
+}
+
+.active {
+background-color: #aaa;
 }
